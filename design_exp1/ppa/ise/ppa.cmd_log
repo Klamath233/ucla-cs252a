@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ppa.ngc" ppa.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppa_map.ncd ppa.ngd ppa.pcf 
+par -w -intstyle ise -ol high -mt off ppa_map.ncd ppa.ncd ppa.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppa.twx ppa.ncd -o ppa.twr ppa.pcf 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ppa.ngc" ppa.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppa_map.ncd ppa.ngd ppa.pcf 
+par -w -intstyle ise -ol high -mt off ppa_map.ncd ppa.ncd ppa.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppa.twx ppa.ncd -o ppa.twr ppa.pcf 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ppa.ngc" ppa.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppa_map.ncd ppa.ngd ppa.pcf 
+par -w -intstyle ise -ol high -mt off ppa_map.ncd ppa.ncd ppa.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppa.twx ppa.ncd -o ppa.twr ppa.pcf 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ppa.ngc" ppa.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppa_map.ncd ppa.ngd ppa.pcf 
+par -w -intstyle ise -ol high -mt off ppa_map.ncd ppa.ncd ppa.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppa.twx ppa.ncd -o ppa.twr ppa.pcf 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
+xst -intstyle ise -ifn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.xst" -ofn "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa.syr" 
