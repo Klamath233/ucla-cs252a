@@ -1,0 +1,10 @@
+Command line:
+   ppa_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50898
+
+Sun Apr 16 02:18:01 2017
+
+
+ Elaboration Time: 0.21875 sec

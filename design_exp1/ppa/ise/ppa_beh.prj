@@ -1,0 +1,5 @@
+verilog work "gap.v"
+verilog work "comb22.v"
+verilog work "comb21.v"
+verilog work "ppa.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

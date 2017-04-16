@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa_test_isim_beh.exe" -prj "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/ppa_test_beh.prj" "work.ppa_test" "work.glbl" 
