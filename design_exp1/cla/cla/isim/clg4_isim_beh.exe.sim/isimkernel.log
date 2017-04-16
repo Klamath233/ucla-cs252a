@@ -1,0 +1,29 @@
+Command line:
+   clg4_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63309
+
+Sat Apr 15 17:43:32 2017
+
+
+ Elaboration Time: 0.405603 sec
+
+ Current Memory Usage: 1314.59 Meg
+
+ Total Signals          : 22
+ Total Nets             : 28
+ Total Signal Drivers   : 11
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 108
+Total Line Count : 20
+
+ Total Simulation Time: 0.421203 sec
+
+ Current Memory Usage: 1314.59 Meg
+
+Sat Apr 15 17:43:36 2017
+

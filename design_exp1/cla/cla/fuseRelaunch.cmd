@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/downloads/Jessie/ucla-cs252a/design_exp1/cla/cla/clg4_isim_beh.exe" -prj "C:/downloads/Jessie/ucla-cs252a/design_exp1/cla/cla/clg4_beh.prj" "work.clg4" "work.glbl" 

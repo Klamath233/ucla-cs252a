@@ -1,0 +1,5 @@
+verilog isim_temp "gap.v"
+verilog isim_temp "clg4.v"
+verilog isim_temp "cla4.v"
+verilog isim_temp "cla16.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
