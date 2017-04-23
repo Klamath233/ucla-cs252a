@@ -27,26 +27,26 @@ module cla64_test;
 	// Inputs
 	reg [63:0] x;
 	reg [63:0] y;
-	reg c0;
+	reg c_in;
 
 	// Outputs
 	wire [63:0] s;
-	wire [3:0] c;
+	wire c_out;
 
 	// Instantiate the Unit Under Test (UUT)
 	cla64 uut (
 		.x(x), 
 		.y(y), 
-		.c0(c0), 
+		.c_in(c_in), 
 		.s(s), 
-		.c(c)
+		.c_out(c_out)
 	);
 
 	initial begin
 		// Initialize Inputs
 		x = 0;
 		y = 0;
-		c0 = 0;
+		c_in = 1;
 
 		// Wait 100 ns for global reset to finish
 		#100;
