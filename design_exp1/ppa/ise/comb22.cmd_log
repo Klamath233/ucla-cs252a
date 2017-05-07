@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/comb22.v} -lang verilog -prj ppa -o comb22.spl -module comb22 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 comb22.spl {C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/comb22.sym} 
+vhdtdtfi -lang verilog -prj ppa -o "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise/comb22.tfi" -lib work "C:/Users/Xi Han/Documents/workspace/ucla-cs252a/design_exp1/ppa/ise//comb22.v" -module comb22 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

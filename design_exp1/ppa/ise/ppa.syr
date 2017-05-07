@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> Reading design: ppa.prj
 
@@ -127,6 +127,7 @@ Elaborating module <gap>.
 Elaborating module <comb22>.
 
 Elaborating module <comb21>.
+WARNING:HDLCompiler:634 - "C:\Users\Xi Han\Documents\workspace\ucla-cs252a\design_exp1\ppa\ise\ppa.v" Line 35: Net <g_layers[2][0]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -136,6 +137,10 @@ Synthesizing Unit <ppa>.
     Related source file is "C:\Users\Xi Han\Documents\workspace\ucla-cs252a\design_exp1\ppa\ise\ppa.v".
         n = 31
         max_layer = 5
+WARNING:Xst:653 - Signal <g_layers<2><0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_layers<3><2:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_layers<4><6:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_layers<5><14:0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 Unit <ppa> synthesized.
 
@@ -216,12 +221,12 @@ Top Level Output File Name         : ppa.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 134
-#      LUT2                        : 5
-#      LUT3                        : 23
-#      LUT4                        : 43
+# BELS                             : 150
+#      LUT2                        : 25
+#      LUT3                        : 12
+#      LUT4                        : 45
 #      LUT5                        : 32
-#      LUT6                        : 31
+#      LUT6                        : 36
 # IO Buffers                       : 98
 #      IBUF                        : 65
 #      OBUF                        : 33
@@ -233,14 +238,14 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  134  out of  63400     0%  
-    Number used as Logic:               134  out of  63400     0%  
+ Number of Slice LUTs:                  150  out of  63400     0%  
+    Number used as Logic:               150  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    134
-   Number with an unused Flip Flop:     134  out of    134   100%  
-   Number with an unused LUT:             0  out of    134     0%  
-   Number of fully used LUT-FF pairs:     0  out of    134     0%  
+ Number of LUT Flip Flop pairs used:    150
+   Number with an unused Flip Flop:     150  out of    150   100%  
+   Number with an unused LUT:             0  out of    150     0%  
+   Number of fully used LUT-FF pairs:     0  out of    150     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -280,7 +285,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.803ns
+   Maximum combinational path delay: 5.959ns
 
 Timing Details:
 ---------------
@@ -288,34 +293,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1895 / 33
+  Total number of paths / destination ports: 1707 / 33
 -------------------------------------------------------------------------
-Delay:               6.803ns (Levels of Logic = 15)
-  Source:            x<0> (PAD)
-  Destination:       s<31> (PAD)
+Delay:               5.959ns (Levels of Logic = 12)
+  Source:            x<8> (PAD)
+  Destination:       s<29> (PAD)
 
-  Data Path: x<0> to s<31>
+  Data Path: x<8> to s<29>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.001   0.525  x_0_IBUF (x_0_IBUF)
-     LUT3:I0->O            3   0.097   0.305  [1].COMB_LOOP[0].comb21/gout1 (g_layers<1><0>)
-     LUT5:I4->O            2   0.097   0.299  [2].COMB_LOOP[2].comb21/gout1 ([3].COMB_LOOP[4].comb21/gout3)
-     LUT5:I4->O            1   0.097   0.511  [3].COMB_LOOP[6].comb21/gout1 ([3].COMB_LOOP[6].comb21/gout)
-     LUT5:I2->O            2   0.097   0.299  [3].COMB_LOOP[6].comb21/gout2 (g_layers<3><6>)
-     LUT3:I2->O            1   0.097   0.379  [4].COMB_LOOP[14].comb21/gout1_SW0 (N10)
-     LUT5:I3->O            2   0.097   0.384  [4].COMB_LOOP[14].comb21/gout1 ([4].COMB_LOOP[14].comb21/gout1)
-     LUT5:I3->O            3   0.097   0.693  [5].COMB_LOOP[18].comb21/gout11 ([5].COMB_LOOP[18].comb21/gout1)
-     LUT6:I1->O            2   0.097   0.383  [5].COMB_LOOP[22].comb21/gout1 ([5].COMB_LOOP[22].comb21/gout)
-     LUT4:I2->O            1   0.097   0.379  [5].COMB_LOOP[22].comb21/gout2 (g_layers<5><22>)
-     LUT5:I3->O            1   0.097   0.295  [5].COMB_LOOP[30].comb21/gout1 ([5].COMB_LOOP[30].comb21/gout)
-     LUT5:I4->O            1   0.097   0.295  [5].COMB_LOOP[30].comb21/gout2 ([5].COMB_LOOP[30].comb21/gout1)
-     LUT5:I4->O            1   0.097   0.511  [5].COMB_LOOP[30].comb21/gout3 (g_layers<5><30>)
-     LUT3:I0->O            1   0.097   0.279  Mxor_s<31>_xo<0>1 (s_31_OBUF)
-     OBUF:I->O                 0.000          s_31_OBUF (s<31>)
+     IBUF:I->O             7   0.001   0.584  x_8_IBUF (x_8_IBUF)
+     LUT4:I0->O            3   0.097   0.703  [1].COMB_LOOP[8].comb22/aout1 (a_layers<1><8>)
+     LUT6:I0->O            1   0.097   0.511  [5].COMB_LOOP[28].comb21/gout111 ([5].COMB_LOOP[28].comb21/gout111)
+     LUT6:I3->O            1   0.097   0.295  [5].COMB_LOOP[28].comb21/gout112 ([5].COMB_LOOP[28].comb21/gout112)
+     LUT5:I4->O            2   0.097   0.299  [5].COMB_LOOP[28].comb21/gout113 ([5].COMB_LOOP[28].comb21/gout11)
+     LUT5:I4->O            2   0.097   0.697  [5].COMB_LOOP[28].comb21/gout14 ([5].COMB_LOOP[28].comb21/gout1)
+     LUT6:I0->O            1   0.097   0.511  [5].COMB_LOOP[28].comb21/gout2_SW0 (N2)
+     LUT6:I3->O            2   0.097   0.299  [5].COMB_LOOP[28].comb21/gout2 ([5].COMB_LOOP[28].comb21/gout2)
+     LUT5:I4->O            1   0.097   0.295  [5].COMB_LOOP[28].comb21/gout_SW0 (N6)
+     LUT5:I4->O            1   0.097   0.511  [5].COMB_LOOP[28].comb21/gout (g_layers<5><28>)
+     LUT3:I0->O            1   0.097   0.279  Mxor_s<29>_xo<0>1 (s_29_OBUF)
+     OBUF:I->O                 0.000          s_29_OBUF (s<29>)
     ----------------------------------------
-    Total                      6.803ns (1.262ns logic, 5.541ns route)
-                                       (18.6% logic, 81.4% route)
+    Total                      5.959ns (0.971ns logic, 4.988ns route)
+                                       (16.3% logic, 83.7% route)
 
 =========================================================================
 
@@ -326,13 +328,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.81 secs
+Total CPU time to Xst completion: 6.48 secs
  
 --> 
 
-Total memory usage is 414688 kilobytes
+Total memory usage is 414636 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

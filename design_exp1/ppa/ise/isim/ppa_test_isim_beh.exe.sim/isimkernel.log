@@ -2,9 +2,28 @@ Command line:
    ppa_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50898
+     -socket  54111
 
-Sun Apr 16 02:18:01 2017
+Wed Apr 26 11:03:43 2017
 
 
- Elaboration Time: 0.21875 sec
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 1509.28 Meg
+
+ Total Signals          : 1064
+ Total Nets             : 662
+ Total Signal Drivers   : 535
+ Total Blocks           : 170
+ Total Primitive Blocks : 168
+ Total Processes        : 537
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 871
+Total Line Count : 21
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 408.24 Meg
+
+Thu Apr 27 01:07:04 2017
+

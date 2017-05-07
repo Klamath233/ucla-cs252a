@@ -1,0 +1,12 @@
+[Inputs]
+gL
+aL
+gR
+aR
+[Outputs]
+gout
+aout
+[BiDir]
+[ATTRIBUTES]
+VeriModel comb22
+

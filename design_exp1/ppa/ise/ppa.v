@@ -65,7 +65,7 @@ wire [n:0] p;
 
 				end
 			end else begin
-				buf(g_layers[i][j], g_layers[i - 1][j]);
+				// buf(g_layers[i][j], g_layers[i - 1][j]);
 			end
 		end
 	end
